@@ -18,3 +18,21 @@
     </th>
   </tr>
 </table>
+
+<script>
+  var app = angular.module("myApp", []);
+  var valami;
+  app.controller("myCtrl", function($scope, $http) {
+    $http({
+      method: "GET",
+      url: "welcome.htm"
+    }).then(
+      function mySuccess(response) {
+        valami = response.data;
+      },
+      function myError(response) {
+        $scope.myWelcome = response.statusText;
+      }
+    );
+  });
+</script>

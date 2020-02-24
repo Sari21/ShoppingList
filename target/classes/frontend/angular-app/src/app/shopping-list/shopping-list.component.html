@@ -1,0 +1,38 @@
+<h2>Ezeket szeretnénk megvenni:</h2>
+<table class="col-8">
+  <tr *ngFor="let hero of Heroes">
+    <th>
+      {{ hero.id }}
+    </th>
+    <th>
+      {{ hero.name }}
+    </th>
+    <th>
+      {{ hero.price }}
+    </th>
+    <th>
+      X
+    </th>
+    <th>
+      pipa
+    </th>
+  </tr>
+</table>
+
+<script>
+  var app = angular.module("myApp", []);
+  var valami;
+  app.controller("myCtrl", function($scope, $http) {
+    $http({
+      method: "GET",
+      url: "welcome.htm"
+    }).then(
+      function mySuccess(response) {
+        valami = response.data;
+      },
+      function myError(response) {
+        $scope.myWelcome = response.statusText;
+      }
+    );
+  });
+</script>
