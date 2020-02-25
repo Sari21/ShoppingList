@@ -1,21 +1,37 @@
 <h2>Ezeket szeretnénk megvenni:</h2>
 <modal-component></modal-component>
 <table class="col-8">
-  <tr *ngFor="let hero of list">
+  <tr *ngFor="let item of newList">
     <th>
-      {{ hero.id }}
+      {{ item.id }}
     </th>
     <th>
-      {{ hero.name }}
+      {{ item.name }}
     </th>
     <th>
-      {{ hero.price }}
+      {{ item.price }}
     </th>
     <th>
       X
     </th>
     <th>
       pipa
+    </th>
+  </tr>
+</table>
+
+<br />
+<h2>Ezeket már megvettük:</h2>
+<table class="col-8">
+  <tr *ngFor="let item of boughtList">
+    <th>
+      {{ item.id }}
+    </th>
+    <th>
+      {{ item.name }}
+    </th>
+    <th>
+      {{ item.price }}
     </th>
   </tr>
 </table>
