@@ -3,8 +3,10 @@ package hu.sari.shoppinglist.api;
 import hu.sari.shoppinglist.model.ShoppingItem;
 import hu.sari.shoppinglist.service.ShoppingItemService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.server.ServerHttpAsyncRequestControl;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.List;
@@ -27,6 +29,7 @@ public class ShoppingItemController {
 
     @GetMapping
     public List<ShoppingItem> getAllShoppingItems(){
+
         return shoppingItemService.getAllShoppingItems();
     }
 
@@ -44,4 +47,6 @@ public class ShoppingItemController {
     public void buyItem(@PathVariable("id") UUID id){
         shoppingItemService.buyItem(id);
     }
+
+  
 }

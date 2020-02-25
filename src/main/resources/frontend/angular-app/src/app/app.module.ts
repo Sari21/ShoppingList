@@ -7,10 +7,13 @@ import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { ShoppingListComponent } from "./shopping-list/shopping-list.component";
 
+import { ShoppingListService } from "./shopping-list.service";
+import { NewItemModalComponent } from './new-item-modal/new-item-modal.component';
+
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, ShoppingListComponent],
+  declarations: [AppComponent, NavbarComponent, ShoppingListComponent, NewItemModalComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
