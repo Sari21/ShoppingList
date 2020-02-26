@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63a4c6af-f75c-44be-8d7f-944aadd939c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/api/ShoppingItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/api/ShoppingItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list/shopping-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list/shopping-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/main-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/main-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/main-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/main-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/api/ShoppingItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/api/ShoppingItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/main-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/main-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/main-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/main-es5.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -103,7 +88,7 @@
       <workItem from="1582559349012" duration="1163000" />
       <workItem from="1582560594530" duration="2699000" />
       <workItem from="1582622209621" duration="11637000" />
-      <workItem from="1582706389390" duration="8948000" />
+      <workItem from="1582706389390" duration="9871000" />
     </task>
     <servers />
   </component>
