@@ -1,38 +1,58 @@
 <h2>Ezeket szeretnénk megvenni:</h2>
+<modal-component></modal-component>
+<form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+  <table class="col-8">
+    <tr>
+      <th>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" notnull ngModel />
+      </th>
+      <th>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" notnull ngModel />
+      </th>
+
+      <th>
+        <button type="submit">Add</button>
+      </th>
+    </tr>
+  </table>
+</form>
+
 <table class="col-8">
-  <tr *ngFor="let hero of Heroes">
+  <tr *ngFor="let item of newList">
     <th>
-      {{ hero.id }}
+      {{ item.id }}
     </th>
     <th>
-      {{ hero.name }}
+      {{ item.name }}
     </th>
     <th>
-      {{ hero.price }}
+      {{ item.price }}
     </th>
     <th>
-      X
+      <button (click)="deleteItem(item)">
+        X
+      </button>
     </th>
     <th>
-      pipa
+      <button (click)="buy(item)">pipa</button>
     </th>
   </tr>
 </table>
 
-<script>
-  var app = angular.module("myApp", []);
-  var valami;
-  app.controller("myCtrl", function($scope, $http) {
-    $http({
-      method: "GET",
-      url: "welcome.htm"
-    }).then(
-      function mySuccess(response) {
-        valami = response.data;
-      },
-      function myError(response) {
-        $scope.myWelcome = response.statusText;
-      }
-    );
-  });
-</script>
+<br />
+<h2>Ezeket már megvettük:</h2>
+<table class="col-8">
+  <tr *ngFor="let item of boughtList">
+    <th>
+      {{ item.id }}
+    </th>
+    <th>
+      {{ item.name }}
+    </th>
+    <th>
+      {{ item.price }}
+    </th>
+  </tr>
+</table>

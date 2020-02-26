@@ -12,6 +12,7 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.UUID;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("api/shoppingitem")
 @RestController
 public class ShoppingItemController {
@@ -22,8 +23,9 @@ public class ShoppingItemController {
         this.shoppingItemService = shoppingItemService;
     }
 
-    @PostMapping
+    @PostMapping(consumes = "application/json", produces = "application/json")
     public void addShoppingItem(@RequestBody  ShoppingItem shoppingItem){
+        System.out.println(shoppingItem.getName().toString());
         shoppingItemService.addShoppingItem(shoppingItem);
     }
 
@@ -38,6 +40,7 @@ public class ShoppingItemController {
         return shoppingItemService.getShoppingItemById(id).orElse(null);
     }
 
+
     @DeleteMapping(path = "{id}")
     public void deleteShoppingItemById(@PathVariable("id") UUID id){
         shoppingItemService.deleteShoppingItemById(id);
@@ -48,5 +51,5 @@ public class ShoppingItemController {
         shoppingItemService.buyItem(id);
     }
 
-  
+
 }

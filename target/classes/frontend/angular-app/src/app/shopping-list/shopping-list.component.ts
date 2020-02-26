@@ -1,4 +1,7 @@
 import { Component, OnInit } from "@angular/core";
+import { ShoppingListService } from "../shopping-list.service";
+import { Item } from "../item";
+import { NgModel } from "@angular/forms";
 
 @Component({
   selector: "shopping-list",
@@ -6,20 +9,43 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./shopping-list.component.css"]
 })
 export class ShoppingListComponent implements OnInit {
-  constructor() {}
+  newList: Array<Item>;
+  boughtList: Array<Item>;
 
-  ngOnInit(): void {}
+  constructor(private shoppingListService: ShoppingListService) {}
 
-  Heroes = [
-    { id: 11, name: "Dr Nice", price: 500 },
-    { id: 12, name: "Narco", price: 500 },
-    { id: 13, name: "Bombasto", price: 500 },
-    { id: 14, name: "Celeritas", price: 500 },
-    { id: 15, name: "Magneta", price: 500 },
-    { id: 16, name: "RubberMan", price: 500 },
-    { id: 17, name: "Dynama", price: 500 },
-    { id: 18, name: "Dr IQ", price: 500 },
-    { id: 19, name: "Magma", price: 500 },
-    { id: 20, name: "Tornado", price: 500 }
-  ];
+  ngOnInit(): void {
+    this.makeLists();
+  }
+  buy(i): void {
+    i.buy();
+    this.shoppingListService.buy(i);
+    this.makeLists();
+  }
+  makeLists() {
+    this.newList = new Array<Item>();
+    this.boughtList = new Array<Item>();
+    this.shoppingListService.getJSON().subscribe(data => {
+      data.forEach(i => {
+        var v = new Item(i.id, i.name, i.price, i.isBought);
+        if (v.isBought) {
+          this.boughtList.push(v);
+        } else {
+          this.newList.push(v);
+        }
+      });
+    });
+  }
+  onSubmit(userform) {
+    this.shoppingListService.addItem({
+      name: userform.value.name,
+      price: userform.value.price
+    });
+    this.makeLists();
+  }
+  deleteItem(item: Item) {
+    var id = item.id;
+    this.shoppingListService.deleteItem(id);
+    this.makeLists();
+  }
 }

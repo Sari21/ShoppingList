@@ -28,5 +28,11 @@
     "name": "Narancs",
     "price": 500,
     "isBought": false
+  },
+  {
+    "id": "6135802a-67fa-4a03-bf0e-53bcf5551512",
+    "name": "Mi a frász történik",
+    "price": 500,
+    "isBought": false
   }
 ]

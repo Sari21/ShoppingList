@@ -2,11 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63a4c6af-f75c-44be-8d7f-944aadd939c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/new-item-modal/new-item-modal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/new-item-modal/new-item-modal.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/items.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/main-es2015.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/main-es2015.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/main-es5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/main-es5.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/polyfills-es2015.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/polyfills-es2015.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/polyfills-es5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/polyfills-es5.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/runtime-es2015.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/runtime-es2015.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/runtime-es5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/runtime-es5.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/styles-es2015.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/styles-es2015.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/styles-es5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/styles-es5.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/vendor-es2015.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/vendor-es2015.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/vendor-es5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/vendor-es5.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/Item.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/Item.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/new-item-modal/new-item-modal.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/new-item-modal/new-item-modal.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/new-item-modal/new-item-modal.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/new-item-modal/new-item-modal.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/assets/items.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/public/assets/items.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppinglist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppinglist.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/api/ShoppingItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/api/ShoppingItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/Item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/Item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list/shopping-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list/shopping-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list/shopping-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/app/shopping-list/shopping-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/assets/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/assets/items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frontend/angular-app/src/assets/items.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/assets/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/api/ShoppingItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/api/ShoppingItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/main-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/main-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/main-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/main-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/polyfills-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/polyfills-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/polyfills-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/polyfills-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/polyfills-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/polyfills-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/styles-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/styles-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/styles-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/styles-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/styles-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/styles-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/styles-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/styles-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/vendor-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/vendor-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/vendor-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/vendor-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/vendor-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/vendor-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/vendor-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/vendor-es5.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +159,8 @@
       <workItem from="1582558432053" duration="602000" />
       <workItem from="1582559349012" duration="1163000" />
       <workItem from="1582560594530" duration="2699000" />
-      <workItem from="1582622209621" duration="2310000" />
+      <workItem from="1582622209621" duration="11637000" />
+      <workItem from="1582706389390" duration="6768000" />
     </task>
     <servers />
   </component>
@@ -107,45 +176,45 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582028376973" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1582585760288">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1582730337302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582585760288" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1582585760288">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582730337302" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1582730337302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582585760288" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1582585760288">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582730337302" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1582730337302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582585760288" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1582585760288">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582730337302" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1582730337302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582585760288" />
-    <state width="1493" height="208" key="GridCell.Tab.1.bottom" timestamp="1582585760289">
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582730337302" />
+    <state width="1493" height="208" key="GridCell.Tab.1.bottom" timestamp="1582730337303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582585760289" />
-    <state width="1493" height="208" key="GridCell.Tab.1.center" timestamp="1582585760288">
+    <state width="1493" height="208" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582730337303" />
+    <state width="1493" height="208" key="GridCell.Tab.1.center" timestamp="1582730337303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582585760288" />
-    <state width="1493" height="208" key="GridCell.Tab.1.left" timestamp="1582585760288">
+    <state width="1493" height="208" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582730337303" />
+    <state width="1493" height="208" key="GridCell.Tab.1.left" timestamp="1582730337302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582585760288" />
-    <state width="1493" height="208" key="GridCell.Tab.1.right" timestamp="1582585760289">
+    <state width="1493" height="208" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582730337302" />
+    <state width="1493" height="208" key="GridCell.Tab.1.right" timestamp="1582730337303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582585760289" />
+    <state width="1493" height="208" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582730337303" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1582557454594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582557454594" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1582622209651">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1582706401656">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582622209651" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582706401656" />
   </component>
 </project>

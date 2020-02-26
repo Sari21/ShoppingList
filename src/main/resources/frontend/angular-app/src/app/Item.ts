@@ -1,6 +1,6 @@
 export class Item {
-  id: String;
-  name: String;
+  id: string;
+  name: string;
   price: number;
   isBought: boolean;
   constructor(id, name, price, isBought) {
