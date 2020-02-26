@@ -380,11 +380,10 @@ class ShoppingListService {
     }
     getJSON() {
         return this.http.get("http://localhost:8080/api/shoppingitem");
-        //return this.http.get("../assets/items.json");
     }
     buy(item) {
         this.http
-            .put("http://localhost:8080/api/shoppingitem/".concat(item.id), JSON.stringify(item))
+            .put(this.url.concat("/").concat(item.id), item)
             .toPromise()
             .then(data => {
             console.log(data);
@@ -399,8 +398,6 @@ class ShoppingListService {
         });
     }
     deleteItem(id) {
-        console.log("delete");
-        console.log(this.url.concat(id));
         this.http
             .delete(this.url.concat("/").concat(id))
             .toPromise()
@@ -479,6 +476,7 @@ function ShoppingListComponent_tr_19_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", item_r3.price, " ");
 } }
 function ShoppingListComponent_tr_24_Template(rf, ctx) { if (rf & 1) {
+    const _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "th");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
@@ -488,6 +486,12 @@ function ShoppingListComponent_tr_24_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "th");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingListComponent_tr_24_Template_button_click_8_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r9); const item_r7 = ctx.$implicit; const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.deleteItem(item_r7); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " X ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -516,7 +520,7 @@ class ShoppingListComponent {
         this.boughtList = new Array();
         this.shoppingListService.getJSON().subscribe(data => {
             data.forEach(i => {
-                var v = new _item__WEBPACK_IMPORTED_MODULE_1__["Item"](i.id, i.name, i.price, i.isBought);
+                var v = new _item__WEBPACK_IMPORTED_MODULE_1__["Item"](i.id, i.name, i.price, i.bought);
                 if (v.isBought) {
                     this.boughtList.push(v);
                 }
@@ -541,13 +545,13 @@ class ShoppingListComponent {
 }
 ShoppingListComponent.ɵfac = function ShoppingListComponent_Factory(t) { return new (t || ShoppingListComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_shopping_list_service__WEBPACK_IMPORTED_MODULE_2__["ShoppingListService"])); };
 ShoppingListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ShoppingListComponent, selectors: [["shopping-list"]], decls: 25, vars: 2, consts: [[3, "ngSubmit"], ["userForm", "ngForm"], [1, "col-8"], ["for", "name"], ["type", "text", "id", "name", "name", "name", "notnull", "", "ngModel", ""], ["for", "price"], ["type", "number", "id", "price", "name", "price", "notnull", "", "ngModel", ""], ["type", "submit"], [4, "ngFor", "ngForOf"], [3, "click"]], template: function ShoppingListComponent_Template(rf, ctx) { if (rf & 1) {
-        const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Ezeket szeretn\u00E9nk megvenni:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "modal-component");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "form", 0, 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function ShoppingListComponent_Template_form_ngSubmit_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r8); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](4); return ctx.onSubmit(_r0); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function ShoppingListComponent_Template_form_ngSubmit_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r10); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](4); return ctx.onSubmit(_r0); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "table", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "th");
@@ -578,7 +582,7 @@ ShoppingListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Ezeket m\u00E1r megvett\u00FCk:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "table", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, ShoppingListComponent_tr_24_Template, 7, 3, "tr", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, ShoppingListComponent_tr_24_Template, 10, 3, "tr", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](19);

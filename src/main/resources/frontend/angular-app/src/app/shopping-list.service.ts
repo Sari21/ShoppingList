@@ -40,14 +40,10 @@ export class ShoppingListService {
 
   public getJSON(): Observable<any> {
     return this.http.get("http://localhost:8080/api/shoppingitem");
-    //return this.http.get("../assets/items.json");
   }
   public buy(item: Item) {
     this.http
-      .put(
-        "http://localhost:8080/api/shoppingitem/".concat(item.id),
-        JSON.stringify(item)
-      )
+      .put(this.url.concat("/").concat(item.id), item)
       .toPromise()
       .then(data => {
         console.log(data);
@@ -64,8 +60,6 @@ export class ShoppingListService {
   }
 
   public deleteItem(id) {
-    console.log("delete");
-    console.log(this.url.concat(id));
     this.http
       .delete(this.url.concat("/").concat(id))
       .toPromise()

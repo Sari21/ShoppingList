@@ -25,7 +25,6 @@ public class ShoppingItemController {
 
     @PostMapping(consumes = "application/json", produces = "application/json")
     public void addShoppingItem(@RequestBody  ShoppingItem shoppingItem){
-        System.out.println(shoppingItem.getName().toString());
         shoppingItemService.addShoppingItem(shoppingItem);
     }
 

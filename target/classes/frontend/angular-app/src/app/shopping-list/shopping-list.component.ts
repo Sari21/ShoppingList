@@ -27,7 +27,7 @@ export class ShoppingListComponent implements OnInit {
     this.boughtList = new Array<Item>();
     this.shoppingListService.getJSON().subscribe(data => {
       data.forEach(i => {
-        var v = new Item(i.id, i.name, i.price, i.isBought);
+        var v = new Item(i.id, i.name, i.price, i.bought);
         if (v.isBought) {
           this.boughtList.push(v);
         } else {

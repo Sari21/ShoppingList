@@ -723,12 +723,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ShoppingListService, [{
         key: "getJSON",
         value: function getJSON() {
-          return this.http.get("http://localhost:8080/api/shoppingitem"); //return this.http.get("../assets/items.json");
+          return this.http.get("http://localhost:8080/api/shoppingitem");
         }
       }, {
         key: "buy",
         value: function buy(item) {
-          this.http.put("http://localhost:8080/api/shoppingitem/".concat(item.id), JSON.stringify(item)).toPromise().then(function (data) {
+          this.http.put(this.url.concat("/").concat(item.id), item).toPromise().then(function (data) {
             console.log(data);
           });
         }
@@ -742,8 +742,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "deleteItem",
         value: function deleteItem(id) {
-          console.log("delete");
-          console.log(this.url.concat(id));
           this.http.delete(this.url.concat("/").concat(id)).toPromise().then(function (data) {
             console.log(data);
           });
@@ -922,6 +920,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     function ShoppingListComponent_tr_24_Template(rf, ctx) {
       if (rf & 1) {
+        var _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "th");
@@ -939,6 +939,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "th");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "th");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 9);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingListComponent_tr_24_Template_button_click_8_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r9);
+
+          var item_r7 = ctx.$implicit;
+
+          var ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r8.deleteItem(item_r7);
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " X ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -992,7 +1012,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.boughtList = new Array();
           this.shoppingListService.getJSON().subscribe(function (data) {
             data.forEach(function (i) {
-              var v = new _item__WEBPACK_IMPORTED_MODULE_1__["Item"](i.id, i.name, i.price, i.isBought);
+              var v = new _item__WEBPACK_IMPORTED_MODULE_1__["Item"](i.id, i.name, i.price, i.bought);
 
               if (v.isBought) {
                 _this.boughtList.push(v);
@@ -1035,7 +1055,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       consts: [[3, "ngSubmit"], ["userForm", "ngForm"], [1, "col-8"], ["for", "name"], ["type", "text", "id", "name", "name", "name", "notnull", "", "ngModel", ""], ["for", "price"], ["type", "number", "id", "price", "name", "price", "notnull", "", "ngModel", ""], ["type", "submit"], [4, "ngFor", "ngForOf"], [3, "click"]],
       template: function ShoppingListComponent_Template(rf, ctx) {
         if (rf & 1) {
-          var _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+          var _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2");
 
@@ -1048,7 +1068,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "form", 0, 1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function ShoppingListComponent_Template_form_ngSubmit_3_listener($event) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r8);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r10);
 
             var _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](4);
 
@@ -1115,7 +1135,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "table", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, ShoppingListComponent_tr_24_Template, 7, 3, "tr", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, ShoppingListComponent_tr_24_Template, 10, 3, "tr", 8);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
