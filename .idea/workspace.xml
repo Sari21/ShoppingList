@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63a4c6af-f75c-44be-8d7f-944aadd939c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/api/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/ShoppinglistApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/ShoppingListApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/dao/FakeUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hu/sari/shoppinglist/ShoppinglistApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hu/sari/shoppinglist/ShoppingListApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frontend/angular-app/src/app/shopping-list/shopping-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/ShoppinglistApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/ShoppinglistApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hu/sari/shoppinglist/ShoppinglistApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hu/sari/shoppinglist/ShoppinglistApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +68,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
   </component>
   <component name="RunManager">
     <configuration name="ShoppinglistApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="shoppinglist" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="hu.sari.shoppinglist.ShoppinglistApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hu.sari.shoppinglist.ShoppingListApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,6 +98,7 @@
       <workItem from="1582560594530" duration="2699000" />
       <workItem from="1582622209621" duration="11637000" />
       <workItem from="1582706389390" duration="9871000" />
+      <workItem from="1583061311446" duration="2561000" />
     </task>
     <servers />
   </component>
@@ -100,42 +110,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="123" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582383521867" />
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1582028376973">
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1583061961686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582028376973" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1582732113590">
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583061961686" />
+    <state x="514" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583062963185">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582732113590" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1582732113590">
+    <state x="514" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1583062963185" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1583063426108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582732113590" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1582732113589">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583063426108" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1583063426107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582732113589" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1582732113590">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583063426107" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1583063426107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582732113590" />
-    <state width="1493" height="208" key="GridCell.Tab.1.bottom" timestamp="1582732113591">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583063426107" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1583063426108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582732113591" />
-    <state width="1493" height="208" key="GridCell.Tab.1.center" timestamp="1582732113590">
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583063426108" />
+    <state width="1493" height="208" key="GridCell.Tab.1.bottom" timestamp="1583063426108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582732113590" />
-    <state width="1493" height="208" key="GridCell.Tab.1.left" timestamp="1582732113590">
+    <state width="1493" height="208" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583063426108" />
+    <state width="1493" height="208" key="GridCell.Tab.1.center" timestamp="1583063426108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582732113590" />
-    <state width="1493" height="208" key="GridCell.Tab.1.right" timestamp="1582732113590">
+    <state width="1493" height="208" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583063426108" />
+    <state width="1493" height="208" key="GridCell.Tab.1.left" timestamp="1583063426108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582732113590" />
+    <state width="1493" height="208" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583063426108" />
+    <state width="1493" height="208" key="GridCell.Tab.1.right" timestamp="1583063426108">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583063426108" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1582557454594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
