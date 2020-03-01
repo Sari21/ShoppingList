@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="63a4c6af-f75c-44be-8d7f-944aadd939c2" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/api/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/dao/FakeUserDataAccessService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/api/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/dao/FakeUserDataAccessService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hu/sari/shoppinglist/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/ShoppinglistApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/ShoppingListApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/dao/FakeUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/sari/shoppinglist/dao/UserDao.java" afterDir="false" />
@@ -98,7 +104,7 @@
       <workItem from="1582560594530" duration="2699000" />
       <workItem from="1582622209621" duration="11637000" />
       <workItem from="1582706389390" duration="9871000" />
-      <workItem from="1583061311446" duration="2561000" />
+      <workItem from="1583061311446" duration="3240000" />
     </task>
     <servers />
   </component>
