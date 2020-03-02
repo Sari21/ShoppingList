@@ -1,11 +1,22 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { LoginComponent } from "./login/login.component";
+import { ShoppingListComponent } from "./shopping-list/shopping-list.component";
+import { LogoutComponent } from "./logout/logout.component";
+import { AuthGaurdService } from "./service/auth-gaurd.service";
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  { path: "login", component: LoginComponent, canActivate: [AuthGaurdService] },
+  { path: "logout", component: LogoutComponent },
+  {
+    path: "",
+    component: ShoppingListComponent,
+    canActivate: [AuthGaurdService]
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
