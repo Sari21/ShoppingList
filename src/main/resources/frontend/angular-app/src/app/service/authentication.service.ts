@@ -1,12 +1,29 @@
 import { Injectable } from "@angular/core";
+import { Observable, of } from "rxjs";
+import { tap, delay } from "rxjs/operators";
 
 @Injectable({
   providedIn: "root"
 })
 export class AuthenticationService {
   constructor() {}
+  isLoggedIn = false;
 
-  authenticate(username, password) {
+  // store the URL so we can redirect after logging in
+  redirectUrl: string;
+
+  login(): Observable<boolean> {
+    return of(true).pipe(
+      delay(1000),
+      tap(val => (this.isLoggedIn = true))
+    );
+  }
+
+  logout(): void {
+    this.isLoggedIn = false;
+  }
+
+  /*authenticate(username, password) {
     if (username === "javainuse" && password === "password") {
       sessionStorage.setItem("username", username);
       return true;
@@ -23,5 +40,5 @@ export class AuthenticationService {
 
   logOut() {
     sessionStorage.removeItem("username");
-  }
+  }*/
 }

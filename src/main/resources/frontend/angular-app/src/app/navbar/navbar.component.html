@@ -15,23 +15,17 @@
     <ul class="navbar-nav">
       <li class="nav-item active"></li>
       <li>
-        <a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link"
+        <a *ngIf="authService.isLoggedIn" routerLink="/" class="nav-link"
           >View Employees</a
         >
       </li>
       <li>
-        <a
-          *ngIf="!loginService.isUserLoggedIn()"
-          routerLink="/login"
-          class="nav-link"
+        <a *ngIf="!authService.isLoggedIn" routerLink="/login" class="nav-link"
           >Login</a
         >
       </li>
       <li>
-        <a
-          *ngIf="loginService.isUserLoggedIn()"
-          routerLink="/logout"
-          class="nav-link"
+        <a *ngIf="authService.isLoggedIn" routerLink="/logout" class="nav-link"
           >LogOut</a
         >
       </li>

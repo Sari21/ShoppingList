@@ -7,7 +7,7 @@ import { AuthenticationService } from "../service/authentication.service";
   styleUrls: ["./navbar.component.css"]
 })
 export class NavbarComponent implements OnInit {
-  constructor(public loginService: AuthenticationService) {}
+  constructor(public authService: AuthenticationService) {}
 
   ngOnInit(): void {}
 }

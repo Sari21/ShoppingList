@@ -14,7 +14,7 @@ export class LogoutComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.authentocationService.logOut();
+    this.authentocationService.logout();
     this.router.navigate(["login"]);
   }
 }
