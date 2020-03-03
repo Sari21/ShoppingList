@@ -12,6 +12,7 @@ import { ShoppingListService } from "./shopping-list.service";
 import { NewItemModalComponent } from "./new-item-modal/new-item-modal.component";
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LogoutComponent } from './logout/logout.component';
     ShoppingListComponent,
     NewItemModalComponent,
     LoginComponent,
-    LogoutComponent
+    LogoutComponent,
+    RegistrationComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ShoppingListService],

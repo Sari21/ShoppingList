@@ -28,4 +28,9 @@ public class FakeUserDataAccessService  implements UserDao{
     public Optional<User> selectUserById(UUID id) {
         return DB.stream().filter(item -> item.getId().equals(id)).findFirst();
     }
+
+    @Override
+    public Optional<User> selectUserByUsername(String name) {
+        return DB.stream().filter(item -> item.getName().equals(name)).findFirst();
+    }
 }

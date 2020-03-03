@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("api/shoppingitem")
 @RestController
 public class ShoppingItemController {
@@ -24,29 +25,29 @@ public class ShoppingItemController {
     }
 
     @PostMapping(consumes = "application/json", produces = "application/json")
-    public void addShoppingItem(@RequestBody  ShoppingItem shoppingItem){
+    public void addShoppingItem(@RequestBody ShoppingItem shoppingItem) {
         shoppingItemService.addShoppingItem(shoppingItem);
     }
 
     @GetMapping
-    public List<ShoppingItem> getAllShoppingItems(){
+    public Iterable<ShoppingItem> getAllShoppingItems() {
 
         return shoppingItemService.getAllShoppingItems();
     }
 
     @GetMapping(path = "{id}")
-    public ShoppingItem getShoppingItemById(@PathVariable("id") UUID id){
+    public ShoppingItem getShoppingItemById(@PathVariable("id") int id) {
         return shoppingItemService.getShoppingItemById(id).orElse(null);
     }
 
 
     @DeleteMapping(path = "{id}")
-    public void deleteShoppingItemById(@PathVariable("id") UUID id){
+    public void deleteShoppingItemById(@PathVariable("id") int id) {
         shoppingItemService.deleteShoppingItemById(id);
     }
 
     @PutMapping(path = "{id}")
-    public void buyItem(@PathVariable("id") UUID id){
+    public void buyItem(@PathVariable("id") int id) {
         shoppingItemService.buyItem(id);
     }
 

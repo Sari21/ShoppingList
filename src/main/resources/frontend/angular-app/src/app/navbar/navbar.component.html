@@ -1,5 +1,4 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">ShoppingList</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -15,18 +14,32 @@
     <ul class="navbar-nav">
       <li class="nav-item active"></li>
       <li>
-        <a *ngIf="authService.isLoggedIn" routerLink="/" class="nav-link"
-          >View Employees</a
-        >
+        <a routerLink="/" class="nav-link">
+          ShoppingList
+        </a>
       </li>
       <li>
-        <a *ngIf="!authService.isLoggedIn" routerLink="/login" class="nav-link"
+        <a
+          *ngIf="!authService.isUserLoggedIn()"
+          routerLink="/login"
+          class="nav-link"
           >Login</a
         >
       </li>
       <li>
-        <a *ngIf="authService.isLoggedIn" routerLink="/logout" class="nav-link"
+        <a
+          *ngIf="authService.isUserLoggedIn()"
+          routerLink="/logout"
+          class="nav-link"
           >LogOut</a
+        >
+      </li>
+      <li>
+        <a
+          *ngIf="!authService.isUserLoggedIn()"
+          routerLink="/signup"
+          class="nav-link"
+          >SignUp</a
         >
       </li>
 

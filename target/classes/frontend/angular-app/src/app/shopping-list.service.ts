@@ -15,10 +15,7 @@ import { error } from "@angular/compiler/src/util";
 })
 export class ShoppingListService {
   url = "http://localhost:8080/api/shoppingitem";
-  postData = {
-    name: "ásványvíz",
-    price: 200
-  };
+
   constructor(private http: HttpClient) {
     this.getJSON().subscribe(data => {
       console.log(data);

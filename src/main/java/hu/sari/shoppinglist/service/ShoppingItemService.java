@@ -1,37 +1,46 @@
 package hu.sari.shoppinglist.service;
 
-import hu.sari.shoppinglist.dao.ShoppingItemDao;
+import hu.sari.shoppinglist.dao.ShoppingItemRepository;
 import hu.sari.shoppinglist.model.ShoppingItem;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 @Service
 public class ShoppingItemService {
-    private final ShoppingItemDao shoppingItemDao;
+    //private final ShoppingItemDao shoppingItemDao;
+    private final ShoppingItemRepository shoppingItemRepository;
 
     @Autowired
-    public ShoppingItemService(@Qualifier("mydb") ShoppingItemDao shoppingItemDao) {
-        this.shoppingItemDao = shoppingItemDao;
+  //  public ShoppingItemService(@Qualifier("mydb") ShoppingItemRepository shoppingItemRepository) {
+    public ShoppingItemService( ShoppingItemRepository shoppingItemRepository) {
+        //this.shoppingItemDao = shoppingItemDao;
+        this.shoppingItemRepository = shoppingItemRepository;
     }
 
-    public int addShoppingItem(ShoppingItem shoppingItem){
-        return shoppingItemDao.insertShoppingItem(shoppingItem);
+    public String addShoppingItem(ShoppingItem shoppingItem){
+        //return shoppingItemDao.insertShoppingItem(shoppingItem);
+        ShoppingItem s = new ShoppingItem(shoppingItem.getId(), shoppingItem.getName(), shoppingItem.getPrice());
+        shoppingItemRepository.save(s);
+        return "Saved";
     }
-    public List<ShoppingItem> getAllShoppingItems(){
-        return shoppingItemDao.selectAllShoppingItems();
+    public Iterable<ShoppingItem> getAllShoppingItems(){
+       return shoppingItemRepository.findAll();
     }
-    public Optional<ShoppingItem> getShoppingItemById(UUID id){
-        return shoppingItemDao.selectShoppingItemById(id);
+    public Optional<ShoppingItem> getShoppingItemById(int id){
+        //return shoppingItemDao.selectShoppingItemById(id);
+       return shoppingItemRepository.findById(id);
     }
-    public int deleteShoppingItemById(UUID id){
-        return shoppingItemDao.deleteShoppingItemById(id);
+    public void deleteShoppingItemById(int id){
+
+             shoppingItemRepository.deleteById(id);
     }
-    public int buyItem(UUID id){
-        return shoppingItemDao.buyShoppingItemById(id);
+    public void buyItem(int id){
+         Optional<ShoppingItem> si =shoppingItemRepository.findById(id);
+        si.get().buy();
+
+
+
     }
 }

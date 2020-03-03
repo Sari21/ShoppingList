@@ -30,4 +30,7 @@ public class UserService {
     public Optional<User> getUserById(UUID id){
         return userDao.selectUserById(id);
     }
+    public Optional<User> getUserByUsername(String name){
+        return userDao.selectUserByUsername(name);
+    }
 }
