@@ -2,20 +2,16 @@ package hu.sari.shoppinglist.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.util.Random;
 
 @Entity
+@Table
 public class ShoppingItem {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
     private final int id;
-    @NotBlank
     private final String name;
-    @NotBlank
     private final int price;
 
     private boolean isBought;
@@ -27,8 +23,9 @@ public class ShoppingItem {
         this.isBought = false;
 
     }
-    public ShoppingItem(@JsonProperty("id")int id, @JsonProperty("name") String name, @JsonProperty("price") int price) {
-        this.id = id;
+    public ShoppingItem( @JsonProperty("name") String name, @JsonProperty("price") int price) {
+        Random rn = new Random();
+        this.id = rn.nextInt();
         this.name = name;
         this.price = price;
         this.isBought = false;

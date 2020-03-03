@@ -1,0 +1,15 @@
+<div class="container justify-content-center">
+  <form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+    <div class="jumbotron col-5 d-flex flex-column justify-content-center">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" notnull ngModel />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" notnull ngModel />
+
+      <button class="btn btn-success" routerLink="" type="submit">
+        Login
+      </button>
+    </div>
+  </form>
+</div>
