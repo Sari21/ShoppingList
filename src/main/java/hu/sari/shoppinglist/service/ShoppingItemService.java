@@ -21,8 +21,7 @@ public class ShoppingItemService {
 
     public String addShoppingItem(ShoppingItem shoppingItem){
         //return shoppingItemDao.insertShoppingItem(shoppingItem);
-        ShoppingItem s = new ShoppingItem(shoppingItem.getId(), shoppingItem.getName(), shoppingItem.getPrice());
-        shoppingItemRepository.save(s);
+        shoppingItemRepository.save(shoppingItem);
         return "Saved";
     }
     public Iterable<ShoppingItem> getAllShoppingItems(){
