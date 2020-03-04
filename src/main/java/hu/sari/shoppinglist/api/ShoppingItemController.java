@@ -37,8 +37,13 @@ private final ShoppingItemRepository shoppingItemRepository;
     }
 
     @GetMapping(consumes = "application/json", produces = "application/json")
-    public Iterable<ShoppingItem> getAllShoppingItems() {
-        return shoppingItemRepository.findAll();
+    public List<ShoppingItem> getAllShoppingItems() {
+        Iterable<ShoppingItem> it =  shoppingItemRepository.findAll();
+        List<ShoppingItem> list = new ArrayList<>();
+        for(ShoppingItem s : it){
+            list.add(s);
+        }
+        return list;
     }
 
     @GetMapping(path = "{id}")
